@@ -22,6 +22,12 @@ var gameActive = true;
 //     console.log('game reset');
 //     gameplay();
 // };
+var wins= 0;
+var losses = 0;
+
+// Decaring variables for tallies
+$('#numberWins').text(wins);
+$('#numberLosses').text(losses);
 
 function game() {
 if (gameActive = true) {
@@ -60,17 +66,20 @@ for (i = 0; i < 4; i++) {
 
      if (userScore === targetNum) {
          alert("You Win!");
-         $("#win").animate({ opacity: "1"});
+         $('#numberWins').text(wins);
+
     //  $('#userScoreshow').text(userScore);
         (gameActive = false);
-         resetGame();
+        resetGame();
+         
 
      } else if (userScore > targetNum) {
         userScore--;
         alert("You Lost!");
-        $("#loss").animate({ opacity: "1"});
+        $('#numberLosses').text(losses);
         (gameActive= false)
         resetGame();
+        
              
     }
      
