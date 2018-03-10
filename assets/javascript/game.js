@@ -65,6 +65,7 @@ for (i = 0; i < 4; i++) {
 
 
      if (userScore === targetNum) {
+         wins++;
          alert("You Win!");
          $('#numberWins').text(wins);
 
@@ -74,7 +75,7 @@ for (i = 0; i < 4; i++) {
          
 
      } else if (userScore > targetNum) {
-        userScore--;
+        losses++
         alert("You Lost!");
         $('#numberLosses').text(losses);
         (gameActive= false)

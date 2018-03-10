@@ -1,5 +1,5 @@
 # week-4-game
-Instructions
+Instructions:
 You will be shown a random number at the start of the game and when the game restarts.
 You win the game by matching your total score to the random number.
 You lose the game if your total score goes above the random number.
