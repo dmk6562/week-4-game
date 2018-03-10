@@ -1,82 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta charset="UTF-8">
 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=2.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Crystals Collector Game</title>
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+    <!-- <script type="text/javascript" src="assets/javascript/game.js"></script> -->
+    
 
 </head>
 <body>
 
-    
-  <div class="container">
-      
- 
-        <div classs="row">
-          <div class="col-m-12 col-m-12 col-md-12 col-m-12"> 
-    
-        <h1><span><strong>Crystals Collector Game</strong></span></h1>
-        <hr>
-        <div id="instructions"></div>
-        <p>You will be shown a random number at the start of the game.</p>
-        <p>You win the game by matching your total score to the random number.</p>
-        <p>You lose the game if your total score goes above the random number.</p>
-        <p>The values of each crystal changes when the game restarts</p>
+    <main>
+
+            <h1><span><strong>Crystals Collector Game</strong></span></h1>
+        </div>
+
+        <div id="instructions">
+            <p>You will be shown a random number at the start of the game.</p>
+            <p>You win the game by matching your total score to the random number.</p>
+            <p>You lose the game if your total score goes above the random number.</p>
+            <p>The values of each crystal changes when the game restarts</p>
 
         </div> 
-
-        <div class = "container">
-            <div id="userGuesses">
-                    <h2>Target Value: <span class="value"></span></h2> 	
-                </div>
-            
-                <div id="scoreboard">
-                    <h3><span id="status"></span></h3>
-                    <h3>Wins: <span id="win"></span></h3>
-                    <h3>Losses: <span id="loss"></span> </h3>
-                </div>
-            </div>
-        </div>
         
-        <div id="crystals"></div>
 
-        <div id="total score">
-            <h2 id="ts">Total Score: <span id ="yourscore">0</span></h2>
-        <!-- </div>
-        </div> -->
+        <div id ="crystals">
+            <img id="bluecrystal"  class="crystal-imgs" width="150" height="150" src="assets/images/blue2.jpg" alt="blue">
+            <img id="greencrystal" class="crystal-imgs" width="150" height="150" src="assets/images/green2.jpg" alt="Green">
+            <img id="redcrystal" class="crystal-imgs" width="150" height="150" src="assets/images/red.jpg"    alt="Red">
+            <img id="yellowcrystal" class="crystal-imgs" width="150" height="150" src="assets/images/yellow2.jpg" alt="Yellow">  
 
-      
-        
-        <div id="crystal-container"> 
-                <img class="crystal-imgs" width="150" height="150" src="assets/images/blue2.jpg" id="blue" alt="blue">
-                <img class="crystal-imgs" width="150" height="150" src="assets/images/green2.jpg" id="green" alt="Green">
-                <img class="crystal-imgs" width="150" height="150" src="assets/images/red.jpg"   id="red" alt="Red">
-                <img class="crystal-imgs" width="150" height="150" src="assets/images/yellow2.jpg" id="yellow" alt="Yellow">                
-        </div> 
         </div>
+
+        <div id="show">
+            <h2>Target Number:</h2>
+            <p id= "targetNumberShow">--</p>
+            <!-- <p id= "crystalsCountershow">--</p> -->
+            <h2>Total Score:</h2>
+            <p id ="userScoreshow" >--</p>   
         </div>
-                
 
-    </div> 
+        <!-- <div id="win">
+            <h1>You Win!</h1>
+        </div>
 
-
-
-        <!-- <h1>Number to Guess: <span id="number-to-guess"></span></h1>
-        <div id="crystals">
-      
-          <img class="crystal-image"  width="150" height="150" src="http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg" alt="crystals">
-      
+        <div id="loss">
+            <h1>You Lost!</h1>
         </div> -->
-      
-      
+    </main>
 
-   
- 
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+  
+    
+
 </body>
 </html> 
           

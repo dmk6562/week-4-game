@@ -1,22 +1,19 @@
-/* #crystal-imgs {
-    /* display: inline-block; */
-    /* display: flex; */
-    /* justify-content: space-around; 
-    align-items: center;   
-} */ 
-.crystal-container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-body {
+main {
     background-color: turquoise;
 }
 
 
 
-.container {
-    background-color: turquoise;  
-} 
+
+
+
+
+
+
+
+
+
+
+
+
      
